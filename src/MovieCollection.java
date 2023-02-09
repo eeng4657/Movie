@@ -164,17 +164,15 @@ public class MovieCollection
   
   private void searchCast()
   {
-    System.out.print("Enter a cast member's name here: ");
+    System.out.print("Enter a searchterm here: ");
     String searchTerm = scanner.nextLine();
     searchTerm = searchTerm.toLowerCase();
+    
+    ArrayList<String> results = new ArrayList<String>();
 
     for (int i = 0; i < movies.size(); i++)
     {
-      String[] cast = movies.get(i).getCast().split("\\|");
-      for (int a = 0; a < cast.length; a++)
-      {
-        //
-      }
+      
     }
   }
 
